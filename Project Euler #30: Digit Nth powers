@@ -1,0 +1,2 @@
+n=int(input())
+print(sum([i for i in range(n**2,10**6) if i==sum(int(z)**n for z in str(i))]))
