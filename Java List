@@ -1,0 +1,38 @@
+import java.util.Scanner;
+import java.util.LinkedList;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner scan=new Scanner(System.in);
+        int a=scan.nextInt();
+         LinkedList<Integer> list = new LinkedList<>();
+        for(int i=0;i<a;i++)
+        {
+            int value=scan.nextInt();
+            list.add(value);
+        }
+        int x=scan.nextInt();
+        for(int i=0;i<x;i++)
+        {
+            String Inp=scan.next();
+            if(Inp.equals("Insert"))
+            {
+                int index=scan.nextInt();
+                int value=scan.nextInt();
+                list.add(index,value);
+            }
+            else
+            {
+                int index=scan.nextInt();
+                list.remove(index);
+            }
+        }
+        scan.close();
+        for(Integer num:list)
+        {
+            System.out.print(num+" ");
+        }
+    }
+}
