@@ -1,0 +1,21 @@
+n = [int(input()) for i in range(0,int(input()))]
+def reverse(x):
+    return int(str(x)[::-1])
+def isInputOdd(x):
+    lis = str(x)
+    for i in lis:
+        if int(i)%2==0:
+            flag = False
+            return flag
+        else:
+            flag = True
+    return flag
+def main(iter):    
+    sum1=0
+    for i in range(iter):
+        k = i + reverse(i)
+        if i%10!=0 and isInputOdd(k):
+            sum1+=1
+    print (sum1)
+for i in n:
+    main(i)
