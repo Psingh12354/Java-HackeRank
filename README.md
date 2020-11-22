@@ -45,4 +45,4 @@
   - [Pattern Syntax Checker](https://github.com/Psingh12354/Java-HackeRank/blob/master/Pattern%20Syntax%20Checker)
   - [Welcome To Java](https://github.com/Psingh12354/Java-HackeRank/blob/master/Welcome%20to%20Java!.java) 
 
-### Thank You 
+<h3 align=center><b><i>Thank You</i></b></h3> 
